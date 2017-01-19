@@ -62,12 +62,24 @@ function validar(){
 	            return false;
 	        }
 	        else{
-	        	
+
 	            $("#validar4").fadeIn("slow");
 	            $('input[name="puppy-race"]').css('border', '1px solid #33CC00');
 	        }
 
+	        $.post( 'http://www.abc-cachorro.com/home', {
+	          data: {
 
+	          }
+	        } ).success( function( response ) {
+	          if ( response.message == "success" ) {
+	            // Do something
+	          } else {
+	            alert( 'Error' );
+	          }
+	        } ).error( function ( response ) {
+
+	        } );
 	    });
 }
 
@@ -82,17 +94,17 @@ $(document).on('click', 'div.item-cachorro.flex > div > button.cin-btn.cin-btn-1
 			if(numero >=1){
 				numero=numero+1;
 			}
-		
+
 		}else{
 				if(numero >1){
-					
+
 					numero=numero-1;
-			
+
 				}
 		}
-		
+
 		$("div.item-cachorro.flex > div > input").val(numero);
-		
+
 });
 
 
@@ -102,7 +114,7 @@ $(document).on('click', 'div.item-cachorro.flex > div > button.cin-btn.cin-btn-1
 $('select.meses').each(function(){
 		var $this = $(this), numberOfOptions = $(this).children('option').length;
 
-		$this.addClass('select-hidden'); 
+		$this.addClass('select-hidden');
 		$this.wrap('<div class="select select-url mes"></div>');
 		$this.after('<div class="select-styled"></div>');
 
@@ -149,7 +161,7 @@ $('select.meses').each(function(){
 $('select.tallas').each(function(){
 		var $this = $(this), numberOfOptions = $(this).children('option').length;
 
-		$this.addClass('select-hidden'); 
+		$this.addClass('select-hidden');
 		$this.wrap('<div class="select select-url talle"></div>');
 		$this.after('<div class="select-styled"></div>');
 
