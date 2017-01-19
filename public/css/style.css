@@ -115,7 +115,7 @@ figure {
   margin: auto;
   text-align: center; }
   .container h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #939598;
     margin-bottom: 58px;
     font-family: 'Avenir-Medium';
@@ -126,12 +126,12 @@ figure {
 figure.logo {
   width: 213px;
   margin: auto;
-  margin-bottom: 2.625rem; }
+  margin-bottom: 42px; }
   figure.logo img {
     width: 100%; }
 
 .item-cachorro {
-  font-size: 1.375rem;
+  font-size: 22px;
   color: #939598;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -141,16 +141,16 @@ figure.logo {
           align-items: center;
   margin-bottom: 35px; }
   .item-cachorro p {
-    margin-right: 0.9375rem;
+    margin-right: 15px;
     margin-bottom: 0px;
-    font-size: 1.375rem;
+    font-size: 22px;
     font-family: 'AvenirNext-Bold'; }
 
 input.cin-input.basket-quantity {
-  font-size: 1.75rem; }
+  font-size: 28px; }
 
 .item-descuentos p {
-  font-size: 1.375rem;
+  font-size: 22px;
   font-family: 'AvenirNext-Bold';
   color: #939598;
   width: 100%; }
@@ -162,7 +162,7 @@ input.dec {
   width: 337px; }
 
 .item-descuentos {
-  margin-bottom: 1.3125rem;
+  margin-bottom: 21px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -172,33 +172,33 @@ input.dec {
 .errores {
   color: red;
   display: none;
-  font-size: 0.875rem;
-  padding: 0.625rem;
+  font-size: 14px;
+  padding: 10px;
   position: absolute;
-  right: 1.375rem;
+  right: 22px;
   top: 0px; }
 
 .valido {
   color: #33CC00;
   display: none;
-  font-size: 0.875rem;
-  padding: 0.625rem;
+  font-size: 14px;
+  padding: 10px;
   position: absolute;
-  right: 1.3125rem;
+  right: 21px;
   top: 0px; }
 
 a.btn {
   width: 225px;
   height: 55px;
-  border-radius: 0.3125rem;
+  border-radius: 5px;
   text-decoration: none;
   background: #00b7e5;
   display: block;
   color: #fff;
-  font-size: 1.125rem;
-  padding-top: 1.125rem;
+  font-size: 18px;
+  padding-top: 18px;
   margin: auto;
-  margin-top: 0.625rem;
+  margin-top: 10px;
   font-family: 'AvenirNext-Bold'; }
 
 .flex {
@@ -213,7 +213,7 @@ a.btn {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 1.3125rem; 
+  margin-bottom: 21px; 
 }
 
 .item-codigo-postal {
@@ -223,13 +223,13 @@ a.btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1.3125rem; }
+  margin-bottom: 21px; }
   .item-codigo-postal p {
-    font-size: 1.375rem;
+    font-size: 22px;
     font-family: 'Avenir-Medium';
     color: #505050;
     margin-bottom: 0px;
-    margin-right: 0.625rem; }
+    margin-right: 10px; }
 
 .form-group-cachorro {
   position: relative;
@@ -315,8 +315,8 @@ input[type=number] {
   display: inline-block; }
 
 .cin-btn-small {
-  height: 1.5rem;
-  width: 1.5rem; }
+  height: 24px;
+  width: 24px; }
 
 .cin-btn-md {
   height: 30px;
@@ -326,8 +326,8 @@ input[type=number] {
   margin-bottom: 0px; }
 
 .cin-btn-lg {
-  height: 7rem;
-  width: 7rem; }
+  height: 112px;
+  width: 112px; }
 
 .cin-btn:active {
   background: #00b7e5;
@@ -537,7 +537,7 @@ label:hover:before {
     padding: 0px 8px; }
     .container h2 {
       font-size: 20px; }
-  .item-datos-cahorro, .item-codigo-postal {
+  .item-datos-cachorro, .item-codigo-postal {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
