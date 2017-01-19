@@ -25,34 +25,13 @@ function validar(){
 	            $("#validar1").fadeIn("slow");
 	            $('input[name="puppy-name"]').css('border', '1px solid #33CC00');
 	        }
-
-	        if(correo == "" || !expr.test(correo)){
-	            $("#mensaje2").fadeIn("slow");
-	            $('input[name="your-email"]').css('border', '1px solid red');
-	            return false;
-	        }
-	        else{
-	            $("#mensaje2").fadeOut();
-	            $("#validar2").fadeIn("slow");
-	            $('input[name="your-email"]').css('border', '1px solid #33CC00');
-	        }
-	        if(nombredesc == ""){
-	            $("#mensaje3").fadeIn("slow");
-	            $('input[name="your-name"]').css('border', '1px solid red');
-	            return false;
-	        }
-	        else{
-	            $("#mensaje3").fadeOut();
-	            $("#validar3").fadeIn("slow");
-	            $('input[name="your-name"]').css('border', '1px solid #33CC00');
-	        }
 	        if(selectmes.trim() === ''){
 	        	 $('.mes').css('border', '1px solid red');
 	        }
 	        else{
 	        	$('.mes').css('border', '1px solid #33CC00');
 	        }
-	        if(selectTalla.trim() === ''){
+	         if(selectTalla.trim() === ''){
 	        	 $('.talle').css('border', '1px solid red');
 	        }
 	        else{
@@ -66,20 +45,62 @@ function validar(){
 	            $("#validar4").fadeIn("slow");
 	            $('input[name="puppy-race"]').css('border', '1px solid #33CC00');
 	        }
+	        if(nombredesc == ""){
+	            $("#mensaje3").fadeIn("slow");
+	            $('input[name="your-name"]').css('border', '1px solid red');
+	            return false;
+	        }
+	        else{
+	            $("#mensaje3").fadeOut();
+	            $("#validar3").fadeIn("slow");
+	            $('input[name="your-name"]').css('border', '1px solid #33CC00');
+	        }
 
-	        $.post( 'http://www.abc-cachorro.com/home', {
-	          data: {
+	        if(correo == "" || !expr.test(correo)){
+	            $("#mensaje2").fadeIn("slow");
+	            $('input[name="your-email"]').css('border', '1px solid red');
+	            return false;
+	        }
+	        else{
+	            $("#mensaje2").fadeOut();
+	            $("#validar2").fadeIn("slow");
+	            $('input[name="your-email"]').css('border', '1px solid #33CC00');
+	        }
+	        
+	        
 
-	          }
-	        } ).success( function( response ) {
-	          if ( response.message == "success" ) {
-	            // Do something
-	          } else {
-	            alert( 'Error' );
-	          }
-	        } ).error( function ( response ) {
 
-	        } );
+
+
+	  //       var dataString = $('#discount__form').serialize();
+
+			// $.ajax({
+			//     type: "POST",
+			//     url: "http://www.abc-cachorro.com/home",
+			//     data: dataString,
+			//     dataType: 'json',
+			//     type: 'POST'
+			//     success: function(data) {
+			//     	console.log(data);
+
+			//     }
+			// });
+
+
+
+	        // $.post( 'http://www.abc-cachorro.com/home', {
+	        //   data: {
+
+	        //   }
+	        // } ).success( function( response ) {
+	        //   if ( response.message == "success" ) {
+	        //     // Do something
+	        //   } else {
+	        //     alert( 'Error' );
+	        //   }
+	        // } ).error( function ( response ) {
+
+	        // } );
 	    });
 }
 
