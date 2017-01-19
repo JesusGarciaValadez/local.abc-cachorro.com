@@ -75,7 +75,7 @@ function validar(){
 			    url: "http://www.abc-cachorro.com/home",
 			    data: dataString,
 			    dataType: 'json',
-			    type: 'POST'
+			    type: 'POST',
 			    success: function(data) {
 			    	console.log(data);
 
