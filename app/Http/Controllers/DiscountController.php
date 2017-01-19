@@ -3,6 +3,9 @@
 namespace ABCCachorro\Http\Controllers;
 
 use Illuminate\Http\Request;
+use ABCCachorro\Http\Requests\DiscountRequest;
+
+use ABCCachorro\Discount;
 
 class DiscountController extends Controller
 {
@@ -32,10 +35,23 @@ class DiscountController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store( Request $request )
+    public function store( DiscountRequest $request )
     {
-      //
-      return 'hi';
+      $data = $request->only( "puppy-number", "puppy-name", "puppy-age", "puppy-size", "puppy-race", "your-name", "your-email", "your-zipcode", "your-phone" );
+
+      $registry   = new Discount( $data );
+      $operation  = $registry->save();
+
+      if ( $operation )
+      {
+        $response = [ 'code' => '0', 'message' => 'success' ];
+      }
+      else
+      {
+        $response = [ 'code' => '1', 'message' => 'error' ];
+      }
+
+      return $response;
     }
 
     /**

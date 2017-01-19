@@ -114,9 +114,12 @@
             {!! Form::label( "5", "Teléfono (opcional)" ) !!}
           </div>
         </div>
-        {!! Form::checkbox( "privacy-policy", "Accepted", "", [ "id" => "privacy-policy" ]) !!}
+        {!! Form::checkbox( "privacy-policy", "true", "", [ "id" => "privacy-policy" ]) !!}
         {!! Form::label( "privacy-policy", "He leído y acepto aviso de privacidad" ) !!}
         {!! Html::link( "#", "Registrarnos", [
+          "class" => "btn registrar"
+        ] ) !!}
+        {!! Form::submit( "Registrarnos", [
           "class" => "btn registrar"
         ] ) !!}
       {!! Form::close() !!}
