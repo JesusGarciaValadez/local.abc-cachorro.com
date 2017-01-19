@@ -126,7 +126,7 @@
     </div>
 @endsection
 
-@section( 'scripts' )
+@section( 'headScripts' )
     @parent
     {{-- Html::script( "https://unpkg.com/jquery@1.11.3/dist/jquery.min.js", [
       "type"  => "text/javascript",
