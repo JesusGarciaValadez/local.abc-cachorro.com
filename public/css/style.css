@@ -254,6 +254,7 @@ a.btn {
   -webkit-transform: translateY(-39px);
           transform: translateY(-39px);
   position: absolute;
+  top: 58px;
   left: 10px;
   font-family: 'Avenir-Medium';
   color: #979797; }
@@ -264,8 +265,8 @@ a.btn {
   font-size: 12px; }
 
 .form-group-cachorro > input:not(:placeholder-shown) ~ label {
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
+  -webkit-transform: translateY(-63px);
+          transform: translateY(-63px);
   font-size: 12px; }
 
 .form-group-cachorro > input::-webkit-input-placeholder {
