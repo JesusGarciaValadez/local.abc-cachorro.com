@@ -16,6 +16,9 @@
         'csrfToken' => csrf_token(),
       ] ); ?>
     </script>
+    @section( 'headScripts' )
+
+    @show
 
     <!-- Styles -->
     {!! Html::style( asset( 'css/app.css' ), [
