@@ -7,8 +7,9 @@ function validar(){
 
 	var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
 
-	    $(".registrar").click(function(){
-	        var nombre = $('input[name="puppy-name"]').val();
+		$(".registrar").click(function(){
+
+			var nombre = $('input[name="puppy-name"]').val();
 	        var correo = $('input[name="your-email"]').val();
 	        var nombredesc = $('input[name="your-name"]').val();
 	        var raza = $('input[name="puppy-race"]').val();
@@ -66,55 +67,22 @@ function validar(){
 	            $("#validar2").fadeIn("slow");
 	            $('input[name="your-email"]').css('border', '1px solid #33CC00');
 	        }
-	        
-	        
 
+	        var dataString = $('#discount__form').serialize();
 
+	        $.ajax({
+			    type: "POST",
+			    url: "http://www.abc-cachorro.com/home",
+			    data: dataString,
+			    dataType: 'json',
+			    type: 'POST'
+			    success: function(data) {
+			    	console.log(data);
 
+			    }
+			});
+		});
 
-	  //       var dataString = $('#discount__form').serialize();
-
-			// $.ajax({
-			//     type: "POST",
-			//     url: "http://www.abc-cachorro.com/home",
-			//     data: dataString,
-			//     dataType: 'json',
-			//     type: 'POST'
-			//     success: function(data) {
-			//     	console.log(data);
-
-			//     }
-			// });
-
-
-
-	        // $.post( 'http://www.abc-cachorro.com/home', {
-	        //   data: {
-
-	        //   }
-	        // } ).success( function( response ) {
-	        //   if ( response.message == "success" ) {
-	        //     // Do something
-	        //   } else {
-	        //     alert( 'Error' );
-	        //   }
-	        // } ).error( function ( response ) {
-
-	        // } );
-
-	    //       }
-	    //     } ).done( function( jqXHR ) {
-	    //       if ( jqXHR.message == "success" ) {
-	    //         // Do something
-	    //         alert( 'Exito' );
-	    //       } else {
-	    //         alert( 'Error' );
-	    //       }
-	    //     } ).fail( function ( jqXHR ) {
-	    //       console.log( 'Envio completado' );
-	    //     } );
-
-	    // });
 }
 
 // ------------input number-------------------- //
