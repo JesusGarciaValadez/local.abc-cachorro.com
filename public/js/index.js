@@ -101,7 +101,20 @@ function validar(){
 	        // } ).error( function ( response ) {
 
 	        // } );
-	    });
+
+	    //       }
+	    //     } ).done( function( jqXHR ) {
+	    //       if ( jqXHR.message == "success" ) {
+	    //         // Do something
+	    //         alert( 'Exito' );
+	    //       } else {
+	    //         alert( 'Error' );
+	    //       }
+	    //     } ).fail( function ( jqXHR ) {
+	    //       console.log( 'Envio completado' );
+	    //     } );
+
+	    // });
 }
 
 // ------------input number-------------------- //
