@@ -128,7 +128,12 @@
 
 @section( 'scripts' )
     @parent
-    {!! Html::script( "https://unpkg.com/jquery@1.11.3/dist/jquery.min.js", [
+    {{-- Html::script( "https://unpkg.com/jquery@1.11.3/dist/jquery.min.js", [
+      "type"  => "text/javascript",
+      "async" => "",
+      "defer" => "",
+    ] ) --}}
+    {!! Html::script( "js/jquery-1.11.3.min.js", [
       "type"  => "text/javascript",
       "async" => "",
       "defer" => "",
