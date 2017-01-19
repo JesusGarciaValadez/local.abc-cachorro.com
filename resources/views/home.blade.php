@@ -128,7 +128,10 @@
 
 @section( 'scripts' )
     @parent
-    {!! Html::script( "https://unpkg.com/jquery@1.11.3/dist/jquery.min.js", [ "type" => "text/javascript" ] ) !!}
-    {!! Html::script( "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js", [ "type" => "text/javascript" ] ) !!}
+    {!! Html::script( "https://unpkg.com/jquery@1.11.3/dist/jquery.min.js", [
+      "type"  => "text/javascript",
+      "async" => "",
+      "defer" => "",
+    ] ) !!}
     {!! Html::script( asset( "js/index.js" ), [ "type" => "text/javascript" ] ) !!}
 @endsection
