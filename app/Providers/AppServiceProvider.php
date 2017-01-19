@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace ABCCachorro\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get( '/', function ()
+{
+  return view( 'home' );
+} );
+
+// Auth::routes();
+
+Route::resource( '/home', 'DiscountController', [
+  'only' => [ 'index', 'store' ],
+] );

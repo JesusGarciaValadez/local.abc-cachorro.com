@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace ABCCachorro\Http\Controllers\Auth;
 
-use App\User;
+use ABCCachorro\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use ABCCachorro\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
