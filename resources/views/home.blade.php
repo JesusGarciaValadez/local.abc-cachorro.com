@@ -40,7 +40,7 @@
             ] ) !!}
             {!! Form::label( 'puppy-name', 'Nombre de tu cachorro *' ) !!}
             <div class="errores" id="mensaje1"> ingresa nombre de cachorro</div>
-            <div class="valido" id="validar1"> Bien</div>
+            <div class="valido"  id="validar1"> Bien</div>
           </div>
           {!! Form::select( "puppy-age", [
             "" => "Meses *",
@@ -65,7 +65,7 @@
           <div class="form-group-cachorro">
             {!! Form::text( 'puppy-race', '', [
               "class"       => "text nombre",
-              "id"          => "2",
+              "id"          => "puppy-race",
               "placeholder" => " Raza (opcional)"
             ] ) !!}
             {!! Form::label( 'puppy-race', "Raza (opcional)" ) !!}
@@ -100,10 +100,10 @@
           <div class="form-group-cachorro">
             {!! Form::text( 'your-zipcode', '', [
               "class"       => "text tex",
-              "id"          => "4",
+              "id"          => "your-zipcode",
               "placeholder" => "C.P (opcional)"
             ] ) !!}
-            {!! Form::label( '4', "C.P (opcional)" ) !!}
+            {!! Form::label( 'your-zipcode', "C.P (opcional)" ) !!}
           </div>
           <div class="form-group-cachorro">
             {!! Form::text( "your-phone", "", [
