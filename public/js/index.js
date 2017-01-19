@@ -71,14 +71,15 @@ function validar(){
 	          data: {
 
 	          }
-	        } ).success( function( response ) {
-	          if ( response.message == "success" ) {
+	        } ).done( function( jqXHR ) {
+	          if ( jqXHR.message == "success" ) {
 	            // Do something
+	            alert( 'Exito' );
 	          } else {
 	            alert( 'Error' );
 	          }
-	        } ).error( function ( response ) {
-
+	        } ).fail( function ( jqXHR ) {
+	          console.log( 'Envio completado' );
 	        } );
 	    });
 }
