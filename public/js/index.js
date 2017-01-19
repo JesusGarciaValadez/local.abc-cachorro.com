@@ -8,44 +8,43 @@ function validar(){
 	var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
 
 	    $(".registrar").click(function(){
-	        var nombre = $('input[name="nombre-cachorro"]').val();
-	        var correo = $('input[name="correo"]').val();
-	        var nombredesc = $('input[name="nombre-descuento"]').val();
-	        var raza = $('input[name="raza"]').val();
+	        var nombre = $('input[name="puppy-name"]').val();
+	        var correo = $('input[name="your-email"]').val();
+	        var nombredesc = $('input[name="your-name"]').val();
+	        var raza = $('input[name="puppy-race"]').val();
 	        var selectmes =$('.meses').val();
 	        var selectTalla =$('.tallas').val();
 
 	        if(nombre == ""){
 	            $("#mensaje1").fadeIn("slow");
-	            $('input[name="nombre-cachorro"]').css('border', '1px solid red');
-	            $('.form-group > input::-webkit-input-placeholder').css('color', 'transparent');
+	            $('input[name="puppy-name"]').css('border', '1px solid red');
 	            return false;
 	        }
 	        else{
 	            $("#mensaje1").fadeOut();
 	            $("#validar1").fadeIn("slow");
-	            $('input[name="nombre-cachorro"]').css('border', '1px solid #33CC00');
+	            $('input[name="puppy-name"]').css('border', '1px solid #33CC00');
 	        }
 
 	        if(correo == "" || !expr.test(correo)){
 	            $("#mensaje2").fadeIn("slow");
-	            $('input[name="correo"]').css('border', '1px solid red');
+	            $('input[name="your-email"]').css('border', '1px solid red');
 	            return false;
 	        }
 	        else{
 	            $("#mensaje2").fadeOut();
 	            $("#validar2").fadeIn("slow");
-	            $('input[name="correo"]').css('border', '1px solid #33CC00');
+	            $('input[name="your-email"]').css('border', '1px solid #33CC00');
 	        }
 	        if(nombredesc == ""){
 	            $("#mensaje3").fadeIn("slow");
-	            $('input[name="nombre-descuento"]').css('border', '1px solid red');
+	            $('input[name="your-name"]').css('border', '1px solid red');
 	            return false;
 	        }
 	        else{
 	            $("#mensaje3").fadeOut();
 	            $("#validar3").fadeIn("slow");
-	            $('input[name="nombre-descuento"]').css('border', '1px solid #33CC00');
+	            $('input[name="your-name"]').css('border', '1px solid #33CC00');
 	        }
 	        if(selectmes.trim() === ''){
 	        	 $('.mes').css('border', '1px solid red');
@@ -65,7 +64,7 @@ function validar(){
 	        else{
 	        	
 	            $("#validar4").fadeIn("slow");
-	            $('input[name="raza"]').css('border', '1px solid #33CC00');
+	            $('input[name="puppy-race"]').css('border', '1px solid #33CC00');
 	        }
 
 
@@ -82,9 +81,7 @@ $(document).on('click', 'div.item-cachorro.flex > div > button.cin-btn.cin-btn-1
 		if( accion.indexOf('increment') >= 0){
 			if(numero >=1){
 				numero=numero+1;
-			
 			}
-  			
 		
 		}else{
 				if(numero >1){
@@ -92,13 +89,9 @@ $(document).on('click', 'div.item-cachorro.flex > div > button.cin-btn.cin-btn-1
 					numero=numero-1;
 			
 				}
-
-		
 		}
 		
 		$("div.item-cachorro.flex > div > input").val(numero);
-
-		
 		
 });
 

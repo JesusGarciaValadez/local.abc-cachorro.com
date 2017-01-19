@@ -32,10 +32,10 @@
           </div>
         </div>
         <div class="item-datos-cachorro flex">
-          <div class="form-group">
+          <div class="form-group-cachorro">
             {!! Form::text( 'puppy-name', null, [
               "class"       => "text nombre",
-              "id"          => "1",
+              "id"          => "puppy-name",
               "placeholder" => " Nombre de tu cachorro *"
             ] ) !!}
             {!! Form::label( 'puppy-name', 'Nombre de tu cachorro *' ) !!}
@@ -62,7 +62,7 @@
           ], "", [
             "class" => "tallas"
           ]) !!}
-          <div class="form-group">
+          <div class="form-group-cachorro">
             {!! Form::text( 'puppy-race', '', [
               "class"       => "text nombre",
               "id"          => "2",
@@ -74,7 +74,7 @@
         </div>
         <div class="item-descuentos flex">
           <p>¿Cómo te hacemos llegar nuestros descuentos?</p>
-          <div class="form-group">
+          <div class="form-group-cachorro">
             {!! Form::text( 'your-name', '', [
               "class"       => "text dec",
               "id"          => "3",
@@ -84,7 +84,7 @@
             <div class="errores" id="mensaje3"> ingresa nombre completo</div>
             <div class="valido" id="validar3"> Bien</div>
           </div>
-          <div class="form-group">
+          <div class="form-group-cachorro">
             {!! Form::email( 'your-email', '', [
               "class"       => "text dec",
               "id"          => "4",
@@ -97,7 +97,7 @@
         </div>
         <div class="item-codigo-postal flex">
           <p>nos ayudaría conocer tu</p>
-          <div class="form-group">
+          <div class="form-group-cachorro">
             {!! Form::text( 'your-zipcode', '', [
               "class"       => "text tex",
               "id"          => "4",
@@ -105,7 +105,7 @@
             ] ) !!}
             {!! Form::label( '4', "C.P (opcional)" ) !!}
           </div>
-          <div class="form-group">
+          <div class="form-group-cachorro">
             {!! Form::text( "your-phone", "", [
               "class"       => "text tex",
               "id"          => "5",

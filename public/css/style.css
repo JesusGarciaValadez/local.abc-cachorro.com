@@ -244,13 +244,13 @@ a.btn {
     margin-bottom: 0px;
     margin-right: 10px; }
 
-.form-group {
+.form-group-cachorro {
   position: relative;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   margin-bottom: 0px !important; }
 
-.form-group > * {
+.form-group-cachorro > * {
   font-size: 18px;
   cursor: pointer;
   -webkit-transition: all 300ms ease;
@@ -263,7 +263,7 @@ a.btn {
   background: transparent;
   z-index: 10; }
 
-.form-group > label {
+.form-group-cachorro > label {
   -webkit-transform: translateY(-39px);
           transform: translateY(-39px);
   position: absolute;
@@ -271,28 +271,28 @@ a.btn {
   font-family: 'Avenir-Medium';
   color: #979797; }
 
-.form-group > input:focus ~ label {
+.form-group-cachorro > input:focus ~ label {
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
   font-size: 12px; }
 
-.form-group > input:not(:placeholder-shown) ~ label {
+.form-group-cachorro > input:not(:placeholder-shown) ~ label {
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
   font-size: 12px; }
 
-.form-group > input::-webkit-input-placeholder {
+.form-group-cachorro > input::-webkit-input-placeholder {
   color: transparent; }
 
-.form-group > input:-moz-placeholder {
+.form-group-cachorro > input:-moz-placeholder {
   /* Firefox 18- */
   color: transparent; }
 
-.form-group > input::-moz-placeholder {
+.form-group-cachorro > input::-moz-placeholder {
   /* Firefox 19+ */
   color: transparent; }
 
-.form-group > input:-ms-input-placeholder {
+.form-group-cachorro > input:-ms-input-placeholder {
   color: transparent; }
 
 input.text {
@@ -378,7 +378,7 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center; }
 
-.form-group-select {
+.form-group-cachorro-select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +559,7 @@ label:hover:before {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  input.text, .form-group, .select {
+  input.text, .form-group-cachorro, .select {
     width: 100%;
     margin-bottom: 10px;
     margin-right: 0px; }
