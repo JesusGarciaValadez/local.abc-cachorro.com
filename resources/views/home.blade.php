@@ -131,8 +131,5 @@
     {!! Html::script( "https://unpkg.com/jquery@3.1.1/dist/jquery.min.js", [
       "type"  => "text/javascript"
     ] ) !!}
-    {{-- Html::script( "js/jquery-1.11.3.min.js", [
-      "type"  => "text/javascript"
-    ] ) --}}
     {!! Html::script( asset( "js/index.js" ), [ "type" => "text/javascript" ] ) !!}
 @endsection
