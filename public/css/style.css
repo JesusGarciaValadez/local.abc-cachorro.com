@@ -178,7 +178,7 @@ input.dec {
 .errores {
   color: red;
   display: none;
-  font-size: 14px;
+  font-size: 14px!important;
   padding: 10px;
   position: absolute;
   right: 7px;
