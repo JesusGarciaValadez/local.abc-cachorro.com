@@ -119,7 +119,7 @@
         {!! Html::link( "#", "Registrarnos", [
           "class" => "btn registrar"
         ] ) !!}
-        {{--} Form::submit( "Registrarnos", [
+        {{-- Form::submit( "Registrarnos", [
           "class" => "btn registrar"
         ] ) --}}
       {!! Form::close() !!}
