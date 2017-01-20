@@ -1,6 +1,11 @@
 $(function(){
 	validar();
+	$("div.select.select-url.mes > ul > li:nth-child(1)").hide();
+	$("div.select.select-url.talle > ul > li:nth-child(1)").hide();
+
 })
+
+
 
 
 function validar(){
@@ -105,6 +110,8 @@ $(document).on('click', 'div.item-cachorro.flex > div > button.cin-btn.cin-btn-1
 
 // ------------select-------------------- //
 
+// $(".select-options li").find("li[rel='Meses *']").remove();
+
 $('select.meses').each(function(){
 		var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -149,6 +156,7 @@ $('select.meses').each(function(){
 		$styledSelect.removeClass('active');
 		$list.hide();
 	});
+
 
 	});
 
