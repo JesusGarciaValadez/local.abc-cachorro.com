@@ -38,14 +38,6 @@ function validar(){
 	        else{
 	        	$('.talle').css('border', '1px solid #33CC00');
 	        }
-	        if(raza == ""){
-	            return false;
-	        }
-	        else{
-
-	            $("#validar4").fadeIn("slow");
-	            $('input[name="puppy-race"]').css('border', '1px solid #33CC00');
-	        }
 	        if(nombredesc == ""){
 	            $("#mensaje3").fadeIn("slow");
 	            $('input[name="your-name"]').css('border', '1px solid red');
@@ -56,7 +48,6 @@ function validar(){
 	            $("#validar3").fadeIn("slow");
 	            $('input[name="your-name"]').css('border', '1px solid #33CC00');
 	        }
-
 	        if(correo == "" || !expr.test(correo)){
 	            $("#mensaje2").fadeIn("slow");
 	            $('input[name="your-email"]').css('border', '1px solid red');
@@ -67,6 +58,17 @@ function validar(){
 	            $("#validar2").fadeIn("slow");
 	            $('input[name="your-email"]').css('border', '1px solid #33CC00');
 	        }
+	        if(raza == ""){
+	            return false;
+	        }
+	        else{
+
+	            $("#validar4").fadeIn("slow");
+	            $('input[name="puppy-race"]').css('border', '1px solid #33CC00');
+	        }
+	        
+
+	        
 
 	        var dataString = $('#discount__form').serialize();
 
