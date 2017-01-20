@@ -67,20 +67,7 @@ function validar(){
 	            $('input[name="puppy-race"]').css('border', '1px solid #33CC00');
 	        }
 	        
-
-	        var dataString = $('#discount__form').serialize();
-
-	        $.ajax({
-			    type: "POST",
-			    url: "/home",
-			    data: dataString,
-			    dataType: 'json',
-			    type: 'POST',
-			    success: function(data) {
-			    	console.log(data);
-
-			    }
-			});
+	       
 		});
 
 }
