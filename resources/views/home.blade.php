@@ -120,7 +120,7 @@
           </div>
         </div>
         {!! Form::checkbox( "privacy-policy", "true", "", [ "id" => "privacy-policy" ]) !!}
-        {!! Form::label( "privacy-policy", "He leído y acepto aviso de privacidad" ) !!}
+        <label for="privacy-policy">He leído y acepto <a href="http://www.abccachorro.com/" title="Aviso de privacidad" target="_blank">aviso de privacidad</a></label>
         {!! Form::submit( "Registrarnos", [
           "class" => "btn registrar"
         ] ) !!}
