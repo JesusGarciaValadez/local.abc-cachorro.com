@@ -18,6 +18,4 @@ Route::get( '/', function ()
 
 // Auth::routes();
 
-Route::resource( '/home', 'DiscountController', [
-  'only' => [ 'index', 'store' ],
-] );
+Route::resource( '/home', 'DiscountController' );
