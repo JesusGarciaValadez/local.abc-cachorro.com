@@ -1,7 +1,9 @@
 @extends( 'layouts.app' )
 
+@section( 'description', '' )
+
 @section( 'headScripts' )
-    @parent
+@parent
 @endsection
 
 @section( 'content' )
