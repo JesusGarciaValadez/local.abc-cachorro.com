@@ -6,6 +6,11 @@
         {!! Html::image( asset( 'images/logo-cachorro.png' ), "ABC Cachorro", [] ) !!}
       </figure>
       <h2>Registra  tu cachorro y recibe <span>Tips </span>de Cuidado y Alimentación,<br> además de exclusivas <span>sorpresas </span>que tenemos para ti</h2>
+      @foreach( $errors->all( ) as $error )
+      <div class="alert alert-warning">
+        {{ $error }}
+      </div>
+      @endforeach
       {!! Form::open( [
         'url'     => action( 'DiscountController@store' ),
         'method'  => 'POST',
@@ -119,9 +124,9 @@
         {!! Html::link( "#", "Registrarnos", [
           "class" => "btn registrar"
         ] ) !!}
-        {{-- Form::submit( "Registrarnos", [
+        {!! Form::submit( "Registrarnos", [
           "class" => "btn registrar"
-        ] ) --}}
+        ] ) !!}
       {!! Form::close() !!}
     </div>
 @endsection
