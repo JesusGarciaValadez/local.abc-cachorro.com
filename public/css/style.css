@@ -201,6 +201,20 @@ a.btn {
   margin-top: 10px;
   font-family: 'AvenirNext-Bold'; }
 
+  input.btn{
+  width: 225px;
+  height: 55px;
+  border-radius: 5px;
+  text-decoration : none;
+  background: #00b7e5;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 10px;
+  font-family: 'AvenirNext-Bold';
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
