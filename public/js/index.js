@@ -85,7 +85,7 @@ $(document).on('click', 'div.item-cachorro.flex > div > button.cin-btn.cin-btn-1
 		var numero = parseInt($("div.item-cachorro.flex > div > input").val());
 
 		if( accion.indexOf('increment') >= 0){
-			if(numero >=1){
+			if(numero >=1 && numero <=4 ){
 				numero=numero+1;
 			}
 

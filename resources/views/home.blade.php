@@ -113,7 +113,7 @@
           </div>
         </div>
         <div class="item-codigo-postal flex">
-          <p>nos ayudaría conocer tu</p>
+          <p>nos ayudaría conocer tu:</p>
           <div class="form-group-cachorro">
             {!! Form::text( 'your-zipcode', '', [
               "class"       => "text tex",
@@ -122,6 +122,7 @@
             ] ) !!}
             {!! Form::label( 'your-zipcode', "C.P (opcional)" ) !!}
           </div>
+          <p> y </p>
           <div class="form-group-cachorro">
             {!! Form::text( "your-phone", "", [
               "class"       => "text tex",
@@ -132,7 +133,7 @@
           </div>
         </div>
         {!! Form::checkbox( "privacy-policy", "true", "", [ "id" => "privacy-policy" ]) !!}
-        {!! Form::label( "privacy-policy", "He leído y acepto <a href=""> aviso de privacidad </a>" ) !!}
+        <label for="privacy-policy">He leído y acepto <a href="http://www.abccachorro.com/" title="Aviso de privacidad" target="_blank">aviso de privacidad</a></label>
         {!! Form::submit( "Registrarnos", [
           "class" => "btn registrar"
         ] ) !!}
