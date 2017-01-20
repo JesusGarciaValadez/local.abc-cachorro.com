@@ -283,6 +283,19 @@ a.btn {
 .form-group-cachorro > input:-ms-input-placeholder {
   color: transparent; }
 
+section.validar-gracias h2, section.validar-cerrar h2 {
+  font-size: 34px;
+  font-family: 'AvenirNext-Bold';
+  color: #939598; }
+
+section.validar-gracias p, section.validar-cerrar p {
+  color: #939598;
+  font-size: 28px;
+  font-family: "Avenir-Medium"; }
+
+
+  
+
 input.text {
   border: 1px solid #979797;
   height: 55px;
