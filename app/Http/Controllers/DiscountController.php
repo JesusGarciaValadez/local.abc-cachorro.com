@@ -26,7 +26,7 @@ class DiscountController extends Controller
      */
     public function create()
     {
-        //
+      dd( 'create' );
     }
 
     /**
@@ -44,14 +44,12 @@ class DiscountController extends Controller
 
       if ( $operation )
       {
-        $response = [ 'code' => '0', 'message' => 'success' ];
+        return view( 'success' );
       }
       else
       {
-        $response = [ 'code' => '1', 'message' => 'error' ];
+        return view( 'error' );
       }
-
-      return $response;
     }
 
     /**
@@ -62,7 +60,7 @@ class DiscountController extends Controller
      */
     public function show( $id )
     {
-        //
+      dd( 'show' );
     }
 
     /**
@@ -73,7 +71,7 @@ class DiscountController extends Controller
      */
     public function edit( $id )
     {
-        //
+      dd( 'edit' );
     }
 
     /**
@@ -85,7 +83,7 @@ class DiscountController extends Controller
      */
     public function update( Request $request, $id )
     {
-        //
+      dd( 'update' );
     }
 
     /**
@@ -96,6 +94,6 @@ class DiscountController extends Controller
      */
     public function destroy( $id )
     {
-        //
+      dd( 'destroy' );
     }
 }
