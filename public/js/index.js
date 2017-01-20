@@ -74,7 +74,7 @@ function validar(){
 
 	        $.ajax({
 			    type: "POST",
-			    url: "http://www.abc-cachorro.com/home",
+			    url: "/home",
 			    data: dataString,
 			    dataType: 'json',
 			    type: 'POST',
