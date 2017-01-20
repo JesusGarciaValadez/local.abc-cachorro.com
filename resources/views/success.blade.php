@@ -7,7 +7,7 @@
         <figure class="logo">
           {!! Html::image( asset( 'images/logo-cachorro.png' ), "ABC Cachorro", [] ) !!}
         </figure>
-        <figure class="paloma"><img src="images/cerrar.png"></figure>
+        <figure class="paloma"><img src="images/paloma.png"></figure>
         <h2>¡Gracias!</h2>
         <p>Hemos recibido tus datos correctamente, muy pronto recibirás sorpresas exclusivas. </p>
       </section>
