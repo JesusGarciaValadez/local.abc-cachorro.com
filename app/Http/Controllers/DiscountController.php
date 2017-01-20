@@ -44,14 +44,12 @@ class DiscountController extends Controller
 
       if ( $operation )
       {
-        $response = [ 'code' => '0', 'message' => 'success' ];
+        return view( 'success' );
       }
       else
       {
-        $response = [ 'code' => '1', 'message' => 'error' ];
+        return view( 'error' );
       }
-
-      return $response;
     }
 
     /**
