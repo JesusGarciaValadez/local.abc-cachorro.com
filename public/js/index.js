@@ -68,8 +68,6 @@ function validar(){
 	        }
 	        
 
-	        
-
 	        var dataString = $('#discount__form').serialize();
 
 	        $.ajax({
@@ -86,6 +84,9 @@ function validar(){
 		});
 
 }
+
+
+
 
 // ------------input number-------------------- //
 

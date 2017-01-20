@@ -6,7 +6,12 @@
         {!! Html::image( asset( 'images/logo-cachorro.png' ), "ABC Cachorro", [] ) !!}
       </figure>
 
-      <img src="http://vignette2.wikia.nocookie.net/fairytailfanon/images/7/7c/Fail_Meme.jpg/revision/latest?cb=20160602022650" alt="">
+      <section class="validar-gracias">
+        <figure class="logo"><img src="images/logo-cachorro.png"></figure>
+        <figure class="paloma"><img src="images/paloma.png"></figure>
+        <h2>¡Gracias!</h2>
+        <p>Hemos recibido tus datos correctamente, muy pronto recibirás sorpresas exclusivas. </p>
+      </section>
 
       @foreach( $errors->all( ) as $error )
       <div class="alert alert-warning">
