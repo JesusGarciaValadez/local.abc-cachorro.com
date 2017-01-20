@@ -1,5 +1,9 @@
 @extends( 'layouts.app' )
 
+@section( 'headScripts' )
+    @parent
+@endsection
+
 @section( 'content' )
     <div class="container">
       <figure class="logo">
