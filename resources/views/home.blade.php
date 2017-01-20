@@ -50,11 +50,23 @@
           {!! Form::select( "puppy-age", [
             "" => "Meses *",
             "1"=> "1 mes",
-            "2"=> "2 mes",
-            "3"=> "3 mes",
-            "4"=> "4 mes",
-            "5"=> "5 mes",
-            "6"=> "6 mes",
+            "2"=> "2 meses",
+            "3"=> "3 meses",
+            "4"=> "4 meses",
+            "5"=> "5 meses",
+            "6"=> "6 meses",
+            "8"=> "8 meses",
+            "7"=> "7 meses",
+            "9"=> "9 meses",
+            "10"=> "10 meses",
+            "11"=> "11 meses",
+            "12"=> "12 meses",
+            "13"=> "13 meses",
+            "14"=> "14 meses",
+            "15"=> "15 meses",
+            "16"=> "16 meses",
+            "17"=> "17 meses",
+            "18"=> "18 meses",
           ], "", [
             "class" => "meses"
           ]) !!}
@@ -120,7 +132,7 @@
           </div>
         </div>
         {!! Form::checkbox( "privacy-policy", "true", "", [ "id" => "privacy-policy" ]) !!}
-        {!! Form::label( "privacy-policy", "He leído y acepto aviso de privacidad" ) !!}
+        {!! Form::label( "privacy-policy", "He leído y acepto <a href=""> aviso de privacidad </a>" ) !!}
         {!! Form::submit( "Registrarnos", [
           "class" => "btn registrar"
         ] ) !!}
