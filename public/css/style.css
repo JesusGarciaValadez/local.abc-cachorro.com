@@ -144,7 +144,10 @@ figure.logo {
     margin-right: 15px;
     margin-bottom: 0px;
     font-size: 22px;
-    font-family: 'AvenirNext-Bold'; }
+    font-family: 'AvenirNext-Bold';
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
 
 input.cin-input.basket-quantity {
   font-size: 28px; }
@@ -153,7 +156,10 @@ input.cin-input.basket-quantity {
   font-size: 22px;
   font-family: 'AvenirNext-Bold';
   color: #939598;
-  width: 100%; }
+  width: 100%; 
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}
 
 input.nombre {
   width: 217px; }
@@ -252,7 +258,7 @@ a.btn {
   margin-bottom: 0px !important; }
 
 .form-group-cachorro > * {
-  font-size: 1.125rem;
+  font-size: 18px;
   cursor: pointer;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease; }
@@ -279,8 +285,8 @@ a.btn {
   font-size: 12px; }
 
 .form-group-cachorro > input:not(:placeholder-shown) ~ label {
-  -webkit-transform: translateY(-63px);
-          transform: translateY(-63px);
+  -webkit-transform: translateY(-58px);
+          transform: translateY(-58px);
   font-size: 12px; }
 
 .form-group-cachorro > input::-webkit-input-placeholder {

@@ -31,12 +31,14 @@ function validar(){
 	        }
 	        else{
 	        	$('.mes').css('border', '1px solid #33CC00');
+	        	$('div.select.select-url.mes > div').css('color', '#33CC00');
 	        }
 	         if(selectTalla.trim() === ''){
 	        	 $('.talle').css('border', '1px solid red');
 	        }
 	        else{
 	        	$('.talle').css('border', '1px solid #33CC00');
+	        	$('div.select.select-url.mes > div').css('color', '#33CC00');
 	        }
 	        if(nombredesc == ""){
 	            $("#mensaje3").fadeIn("slow");
