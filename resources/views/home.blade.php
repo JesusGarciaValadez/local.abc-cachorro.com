@@ -1,6 +1,7 @@
 @extends( 'layouts.app' )
 
-@section( 'description', '' )
+@section( 'description', 'Registra a tu cachorro y recibe Tips de Cuidado y Alimentación,
+además de exclusivas sorpresas que tenemos para ti en Abc Cachorro.' )
 
 @section( 'headScripts' )
 @parent
