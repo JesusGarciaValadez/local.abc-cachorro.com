@@ -5,6 +5,7 @@
     <title>{{ config( 'app.name', 'ABC cachorro' ) }}</title>
     <meta name="description" content="@yield( 'description' )">
     {!! Html::meta( "viewport", "width=device-width, initial-scale=1" ) !!}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- CSRF Token -->
     {!! Html::meta( "csrf-token", csrf_token() ) !!}
